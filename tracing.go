@@ -3,11 +3,13 @@ package trasiNG
 import (
 	"context"
 	"errors"
+	"fmt"
+	"io"
+	"net/http"
+
 	"github.com/opentracing/opentracing-go"
 	"github.com/opentracing/opentracing-go/ext"
 	"github.com/wondenge/trasiNG/log"
-	"io"
-	"net/http"
 )
 
 type contextKey int
